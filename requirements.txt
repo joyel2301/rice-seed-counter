@@ -1,0 +1,15 @@
+# Python 3.11 (Windows). Versions tested on 2026-11-24.
+
+# The app (runs on OpenVINO only)
+openvino==2026.4.1
+opencv-python==4.11.0.86
+numpy==1.26.4
+PySide6-Essentials==6.12.0
+
+# Building the Windows .exe (RiceSeedCounter.spec)
+pyinstaller==6.22.3
+
+# Developer tools only (convert_openvino.py, inspect_model.py): reading best.pt
+ultralytics==8.3.0
+torch==2.15.0
+torchvision==0.29.2

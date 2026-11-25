@@ -1,0 +1,64 @@
+볍씨 카운터 (Rice Seed Counter) - 제3자 구성 요소 고지 / Third-party notices
+=========================================================================
+
+이 프로그램에는 아래의 제3자 구성 요소가 포함되어 있습니다. 각 구성 요소는 해당 라이선스를 따르며,
+라이선스 전문은 이 폴더(licenses)에 들어 있습니다.
+This program includes the third-party components below. Each is used under its own license; the full
+license texts are in this folder.
+
+
+1. 쌀알 검출 모델 / Rice grain detection model
+   - 출처 / Source : https://github.com/BearHuntingExpert/Rice-Grain-Phenotyping-System (best.pt)
+   - 저작권 / Copyright (c) 2026 BearHuntingExpert
+   - 라이선스 / License : MIT  ->  MODEL_Rice-Grain-Phenotyping-System_MIT.txt
+   - 관련 논문 / Paper : "An integrated high-throughput rice grain phenotyping method for breeding
+     applications" (출판 예정 / to be published)
+   - 이 프로그램은 원본 가중치를 OpenVINO 형식(external_models\...\openvino\best_*.xml/.bin)으로
+     변환하여 사용합니다. 변환 외에 가중치를 수정하지 않았습니다.
+     The original weights are used after conversion to OpenVINO IR; the weights were not modified.
+   - 참고: 이 모델은 원저작자가 Ultralytics(AGPL-3.0)로 학습했습니다. Ultralytics 코드는 이 배포본에
+     포함되어 있지 않습니다.
+     Note: the model was trained by its authors with Ultralytics (AGPL-3.0). No Ultralytics code is
+     included in this distribution.
+
+2. OpenVINO Runtime 2026.4.1 (Intel Corporation)
+   - https://github.com/openvinotoolkit/openvino
+   - 라이선스 / License : Apache License 2.0  ->  OpenVINO_LICENSE_Apache-2.0.txt
+   - 포함된 제3자 구성 요소 / bundled third-party programs : openvino_third_party\
+
+3. OpenCV 4.11.0 (opencv-python 4.11.0.86)
+   - https://opencv.org , https://github.com/opencv/opencv-python
+   - OpenCV 라이브러리 / library : Apache License 2.0 (및 포함 구성 요소 / and bundled components)
+     ->  OpenCV_Apache-2.0_and_3rd-party.txt
+   - opencv-python 포장 스크립트 / packaging : MIT, Copyright (c) Olli-Pekka Heinisuo
+     ->  opencv-python_packaging_MIT.txt
+   - 동영상 파일용 FFmpeg DLL(opencv_videoio_ffmpeg)은 이 배포본에서 제외했습니다.
+     The FFmpeg DLL (opencv_videoio_ffmpeg) is not included in this distribution.
+
+4. NumPy 1.26.4 (+ OpenBLAS, GCC runtime libraries)
+   - https://numpy.org
+   - 라이선스 / License : BSD 3-Clause, 포함 구성 요소 고지 포함 / with bundled-component notices
+     ->  NumPy_LICENSE_BSD-3-Clause.txt
+
+5. Qt for Python - PySide6 6.12.0 / Shiboken6 6.12.0 / Qt 6 (The Qt Company)
+   - https://www.qt.io/qt-for-python
+   - 라이선스 / License : GNU LGPL v3  ->  LGPL-3.0.txt (LGPL v3는 GPL v3를 참조 / refers to GPL-3.0.txt)
+   - Qt와 PySide6 라이브러리는 수정하지 않았으며, _internal\PySide6 및 _internal\shiboken6 폴더에
+     별도 DLL/모듈로 들어 있습니다. 사용자는 이 파일들을 호환되는 다른 버전으로 교체할 수 있습니다.
+     Qt and PySide6 are unmodified and shipped as separate DLLs/modules in _internal\PySide6 and
+     _internal\shiboken6; users may replace them with compatible versions.
+   - 소스 코드 / Source : https://download.qt.io/official_releases/QtForPython/ ,
+     https://code.qt.io/cgit/pyside/pyside-setup.git (tag v6.12.0)
+
+6. Python 3.11 (Python Software Foundation)
+   - https://www.python.org
+   - 라이선스 / License : PSF License Agreement  ->  Python_LICENSE_PSF.txt
+
+7. PyInstaller (실행 파일 생성 도구 / bootloader)
+   - https://pyinstaller.org
+   - GPL v2 + 예외 조항(bootloader exception): 생성된 실행 파일에는 GPL 의무가 적용되지 않습니다.
+     GPL-2.0 with the bootloader exception: the generated executable is not subject to the GPL.
+
+
+이 프로그램 자체의 코드 / This program's own code
+- 라이선스 / License : MIT  ->  LICENSE.txt

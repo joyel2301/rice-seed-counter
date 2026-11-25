@@ -1,0 +1,24 @@
+# Python environment and caches
+riceseedcounter-env/
+__pycache__/
+*.py[cod]
+
+# Build output (the release zip is attached to GitHub Releases instead)
+build/
+dist/
+*.zip
+
+# Counting results (CSV, photos, error log) are personal data
+results/
+
+# OpenVINO compiled-kernel cache: driver-specific, rebuilt on each PC
+external_models/**/cache/
+
+# Local test images
+Example Image*.jpg
+
+# Editor / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
