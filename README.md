@@ -63,8 +63,7 @@ dist\RiceSeedCounter\RiceSeedCounter.exe --selftest 사진.jpg 결과.txt
 Ultralytics와 같은 규칙으로 구현해서 결과가 같습니다.
 
 ## 만든 사람
-Kim Gikang (Dept. of Plant Medicine, Jeonbuk National University) — 프로그램 코드 작성
-(표시 이름은 `scripts/app_info.py`에서 바꿀 수 있습니다)
+Kim Gikang (Dept. of Plant Medicine, Jeonbuk National University)
 
 이 프로그램은 Anthropic의 AI 도구 Claude의 도움을 받아 작성되었습니다.
 
