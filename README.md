@@ -1,4 +1,4 @@
-# 볍씨 카운터 (Rice Seed Counter)
+# 볍카 (Rice Seed Counter)
 
 스마트폰(DroidCam)이나 USB 웹캠으로 볍씨를 실시간으로 세고, 식물체 라인별로 개수를 기록하는 Windows 프로그램입니다.
 
